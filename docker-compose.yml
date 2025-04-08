@@ -1,0 +1,16 @@
+services:
+
+  nbs_proxy_client:
+    image: registry.urbreath.tech/nbs_proxy_client:latest
+    restart: always
+    container_name: nbs_proxy_client
+    build:
+      context: .
+    ports:
+      - 39010:9090
+    networks:
+      - kafka_dev
+
+networks:
+  kafka_dev:
+    external: true
