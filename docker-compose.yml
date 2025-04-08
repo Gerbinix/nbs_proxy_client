@@ -9,8 +9,8 @@ services:
     ports:
       - 39010:9090
     networks:
-      - kafka_dev
+      - kafka_dev_kafka_dev
 
 networks:
-  kafka_dev:
+  kafka_dev_kafka_dev:
     external: true
