@@ -1,5 +1,5 @@
 # Download Base-image
-FROM python:3.8-slim-bullseye
+FROM python:3.12-slim-bullseye
 
 WORKDIR /app
 
