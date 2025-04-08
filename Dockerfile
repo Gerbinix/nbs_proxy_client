@@ -10,7 +10,7 @@ RUN apt-get update
 RUN apt-get --assume-yes install gcc
 
 # INSTALL TOOLS
-RUN pip install Flask pydantic Flask-Pydantic kafka-broker
+RUN pip install Flask pydantic Flask-Pydantic kafka-python
 
 # Command
 
